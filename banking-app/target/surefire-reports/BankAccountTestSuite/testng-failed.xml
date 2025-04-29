@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BankAccountTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="AllTests(failed)" verbose="0">
+    <classes>
+      <class name="com.project.BankAccountTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="testParameterizedDeposit"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.project.BankAccountTest -->
+    </classes>
+  </test> <!-- AllTests(failed) -->
+  <test thread-count="5" name="PositiveTests(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="positive-tests"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.project.BankAccountTest">
+        <methods>
+          <include name="testWithdraw"/>
+          <include name="testMultipleDeposits" invocation-numbers="0 1 2 3"/>
+          <include name="testInitialBalance"/>
+          <include name="testDeposit"/>
+          <include name="testMultipleWithdrawals" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.project.BankAccountTest -->
+    </classes>
+  </test> <!-- PositiveTests(failed) -->
+  <test thread-count="5" name="NegativeTests(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="negative-tests"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.project.BankAccountTest">
+        <methods>
+          <include name="testInsufficientFunds"/>
+          <include name="testZeroDeposit"/>
+          <include name="testNegativeWithdrawal"/>
+          <include name="testZeroWithdrawal"/>
+          <include name="testNegativeDeposit"/>
+        </methods>
+      </class> <!-- com.project.BankAccountTest -->
+    </classes>
+  </test> <!-- NegativeTests(failed) -->
+  <test thread-count="5" name="DependencyTests(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="dependency-tests"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.project.BankAccountTest">
+        <methods>
+          <include name="testInitialBalanceForDependency"/>
+          <include name="testDepositForDependency"/>
+          <include name="testWithdrawalAfterDeposit"/>
+        </methods>
+      </class> <!-- com.project.BankAccountTest -->
+    </classes>
+  </test> <!-- DependencyTests(failed) -->
+</suite> <!-- Failed suite [BankAccountTestSuite] -->
