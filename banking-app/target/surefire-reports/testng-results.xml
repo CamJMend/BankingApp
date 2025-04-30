@@ -1,67 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-29T13:15:11 CST" name="BankAccountTestSuite" finished-at="2025-04-29T13:15:11 CST" duration-ms="335">
+  <suite started-at="2025-04-30T16:00:54 CST" name="BankAccountTestSuite" finished-at="2025-04-30T16:00:54 CST" duration-ms="467">
     <groups>
+      <group name="data-provider-tests">
+        <method signature="BankAccountTest.testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" name="testDepositWithDataProvider" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@71809907]" name="testDepositWithDataProvider" class="com.project.BankAccountTest"/>
+      </group> <!-- data-provider-tests -->
       <group name="positive-tests">
-        <method signature="BankAccountTest.testDeposit()[pri:0, instance:com.project.BankAccountTest@2ea227af]" name="testDeposit" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.testWithdraw()[pri:0, instance:com.project.BankAccountTest@2ea227af]" name="testWithdraw" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.testDeposit()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" name="testDeposit" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.testWithdraw()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" name="testWithdraw" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testDeposit()[pri:1, instance:com.project.BankAccountTest@4ac3c60d]" name="testDeposit" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testWithdraw()[pri:2, instance:com.project.BankAccountTest@4ac3c60d]" name="testWithdraw" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testDeposit()[pri:1, instance:com.project.BankAccountTest@6c80d78a]" name="testDeposit" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testWithdraw()[pri:2, instance:com.project.BankAccountTest@6c80d78a]" name="testWithdraw" class="com.project.BankAccountTest"/>
       </group> <!-- positive-tests -->
       <group name="dependency-tests">
-        <method signature="BankAccountTest.loginTest()[pri:0, instance:com.project.BankAccountTest@2ea227af]" name="loginTest" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.transferFundsTest()[pri:0, instance:com.project.BankAccountTest@2ea227af]" name="transferFundsTest" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.loginTest()[pri:0, instance:com.project.BankAccountTest@5119fb47]" name="loginTest" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.transferFundsTest()[pri:0, instance:com.project.BankAccountTest@5119fb47]" name="transferFundsTest" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.loginTest()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" name="loginTest" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.transferFundsTest()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" name="transferFundsTest" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.loginTest()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" name="loginTest" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.transferFundsTest()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" name="transferFundsTest" class="com.project.BankAccountTest"/>
       </group> <!-- dependency-tests -->
       <group name="negative-tests">
-        <method signature="BankAccountTest.testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@2ea227af]" name="testNegativeDeposit" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@2ea227af]" name="testNegativeWithdrawal" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@188715b5]" name="testNegativeDeposit" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@188715b5]" name="testNegativeWithdrawal" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testOverdraft()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" name="testOverdraft" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" name="testNegativeDeposit" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" name="testNegativeWithdrawal" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" name="testNegativeDeposit" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" name="testNegativeWithdrawal" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testOverdraft()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" name="testOverdraft" class="com.project.BankAccountTest"/>
       </group> <!-- negative-tests -->
       <group name="parameterized-tests">
-        <method signature="BankAccountTest.testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@2ea227af]" name="testParameterizedDeposit" class="com.project.BankAccountTest"/>
-        <method signature="BankAccountTest.testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@3835c46]" name="testParameterizedDeposit" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" name="testParameterizedDeposit" class="com.project.BankAccountTest"/>
+        <method signature="BankAccountTest.testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@32eff876]" name="testParameterizedDeposit" class="com.project.BankAccountTest"/>
       </group> <!-- parameterized-tests -->
     </groups>
-    <test started-at="2025-04-29T13:15:11 CST" name="AllTests" finished-at="2025-04-29T13:15:11 CST" duration-ms="106">
+    <test started-at="2025-04-30T16:00:54 CST" name="AllTests" finished-at="2025-04-30T16:00:54 CST" duration-ms="115">
       <class name="com.project.BankAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetup()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="beforeClassSetup" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassSetup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="loginTest" finished-at="2025-04-29T13:15:11 CST" duration-ms="2" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="loginTest" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method signature="openAppTest()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="openAppTest" finished-at="2025-04-30T16:00:54 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAppTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDeposit()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="testDeposit" finished-at="2025-04-29T13:15:11 CST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeposit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="testParameterizedDeposit" finished-at="2025-04-29T13:15:11 CST" duration-ms="10" status="PASS">
+        <test-method signature="testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testDepositWithDataProvider" data-provider="depositData" finished-at="2025-04-30T16:00:54 CST" duration-ms="11" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1000.0]]>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[150.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithDataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testDepositWithDataProvider" data-provider="depositData" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[500.0]]>
               </value>
             </param>
             <param index="1">
@@ -69,19 +104,53 @@
                 <![CDATA[500.0]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[1000.0]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testParameterizedDeposit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        </test-method> <!-- testDepositWithDataProvider -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="testNegativeDeposit" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testDepositWithDataProvider" data-provider="depositData" finished-at="2025-04-30T16:00:54 CST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithDataProvider -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testNegativeDeposit" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Deposit must be positive]]>
@@ -89,7 +158,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Deposit must be positive
 at com.project.BankAccount.deposit(BankAccount.java:11)
-at com.project.BankAccountTest.testNegativeDeposit(BankAccountTest.java:36)
+at com.project.BankAccountTest.testNegativeDeposit(BankAccountTest.java:56)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -126,15 +195,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeDeposit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="testNegativeWithdrawal" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testNegativeWithdrawal" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Withdrawal must be positive]]>
@@ -142,7 +211,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Withdrawal must be positive
 at com.project.BankAccount.withdraw(BankAccount.java:16)
-at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:41)
+at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:61)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -179,67 +248,135 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeWithdrawal -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="testWithdraw()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="testWithdraw" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithdraw -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="transferFundsTest()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="transferFundsTest" finished-at="2025-04-29T13:15:11 CST" depends-on-methods="com.project.BankAccountTest.loginTest" duration-ms="0" status="PASS">
+        <test-method signature="testOverdraft()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testOverdraft" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOverdraft -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testParameterizedDeposit" finished-at="2025-04-30T16:00:54 CST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParameterizedDeposit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="transferFundsTest()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="transferFundsTest" finished-at="2025-04-30T16:00:54 CST" depends-on-methods="com.project.BankAccountTest.loginTest" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferFundsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ea227af]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.project.BankAccountTest -->
-    </test> <!-- AllTests -->
-    <test started-at="2025-04-29T13:15:11 CST" name="PositiveTests" finished-at="2025-04-29T13:15:11 CST" duration-ms="9">
-      <class name="com.project.BankAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testDeposit()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" started-at="2025-04-29T13:15:11 CST" name="testDeposit" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginUserTest()[pri:1, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="loginUserTest" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDeposit()[pri:1, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testDeposit" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeposit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="testWithdraw()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" started-at="2025-04-29T13:15:11 CST" name="testWithdraw" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWithdraw -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@2ef3eef9]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWithdraw()[pri:2, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="testWithdraw" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdraw -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterClassSummary()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="afterClassSummary" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassSummary -->
+      </class> <!-- com.project.BankAccountTest -->
+    </test> <!-- AllTests -->
+    <test started-at="2025-04-30T16:00:54 CST" name="PositiveTests" finished-at="2025-04-30T16:00:54 CST" duration-ms="7">
+      <class name="com.project.BankAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@6c80d78a]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeposit()[pri:1, instance:com.project.BankAccountTest@6c80d78a]" started-at="2025-04-30T16:00:54 CST" name="testDeposit" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeposit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@6c80d78a]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testWithdraw()[pri:2, instance:com.project.BankAccountTest@6c80d78a]" started-at="2025-04-30T16:00:54 CST" name="testWithdraw" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdraw -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@6c80d78a]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@6c80d78a]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.BankAccountTest -->
     </test> <!-- PositiveTests -->
-    <test started-at="2025-04-29T13:15:11 CST" name="NegativeTests" finished-at="2025-04-29T13:15:11 CST" duration-ms="10">
+    <test started-at="2025-04-30T16:00:54 CST" name="NegativeTests" finished-at="2025-04-30T16:00:54 CST" duration-ms="13">
       <class name="com.project.BankAccountTest">
-        <test-method signature="testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@188715b5]" started-at="2025-04-29T13:15:11 CST" name="testNegativeDeposit" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method signature="testNegativeDeposit()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="testNegativeDeposit" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Deposit must be positive]]>
@@ -247,7 +384,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Deposit must be positive
 at com.project.BankAccount.deposit(BankAccount.java:11)
-at com.project.BankAccountTest.testNegativeDeposit(BankAccountTest.java:36)
+at com.project.BankAccountTest.testNegativeDeposit(BankAccountTest.java:56)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -284,19 +421,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeDeposit -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@188715b5]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@188715b5]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@188715b5]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@188715b5]" started-at="2025-04-29T13:15:11 CST" name="testNegativeWithdrawal" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method signature="testNegativeWithdrawal()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="testNegativeWithdrawal" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Withdrawal must be positive]]>
@@ -304,7 +441,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Withdrawal must be positive
 at com.project.BankAccount.withdraw(BankAccount.java:16)
-at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:41)
+at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:61)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -341,47 +478,59 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeWithdrawal -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@188715b5]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOverdraft()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="testOverdraft" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOverdraft -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@1a451d4d]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.BankAccountTest -->
     </test> <!-- NegativeTests -->
-    <test started-at="2025-04-29T13:15:11 CST" name="DependencyTests" finished-at="2025-04-29T13:15:11 CST" duration-ms="21">
+    <test started-at="2025-04-30T16:00:54 CST" name="DependencyTests" finished-at="2025-04-30T16:00:54 CST" duration-ms="11">
       <class name="com.project.BankAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@5119fb47]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.project.BankAccountTest@5119fb47]" started-at="2025-04-29T13:15:11 CST" name="loginTest" finished-at="2025-04-29T13:15:11 CST" duration-ms="4" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" started-at="2025-04-30T16:00:54 CST" name="loginTest" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@5119fb47]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="transferFundsTest()[pri:0, instance:com.project.BankAccountTest@5119fb47]" started-at="2025-04-29T13:15:11 CST" name="transferFundsTest" finished-at="2025-04-29T13:15:11 CST" depends-on-methods="com.project.BankAccountTest.loginTest" duration-ms="3" status="PASS">
+        <test-method signature="transferFundsTest()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" started-at="2025-04-30T16:00:54 CST" name="transferFundsTest" finished-at="2025-04-30T16:00:54 CST" depends-on-methods="com.project.BankAccountTest.loginTest" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferFundsTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@5119fb47]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@5119fb47]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@5fdcaa40]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.BankAccountTest -->
     </test> <!-- DependencyTests -->
-    <test started-at="2025-04-29T13:15:11 CST" name="ParameterizedTests" finished-at="2025-04-29T13:15:11 CST" duration-ms="12">
+    <test started-at="2025-04-30T16:00:54 CST" name="ParameterizedTests" finished-at="2025-04-30T16:00:54 CST" duration-ms="4">
       <class name="com.project.BankAccountTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@3835c46]" started-at="2025-04-29T13:15:11 CST" name="setUp" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@32eff876]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@3835c46]" started-at="2025-04-29T13:15:11 CST" name="testParameterizedDeposit" finished-at="2025-04-29T13:15:11 CST" duration-ms="5" status="PASS">
+        <test-method signature="testParameterizedDeposit(double,double)[pri:0, instance:com.project.BankAccountTest@32eff876]" started-at="2025-04-30T16:00:54 CST" name="testParameterizedDeposit" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -397,11 +546,110 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testParameterizedDeposit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@3835c46]" started-at="2025-04-29T13:15:11 CST" name="tearDown" finished-at="2025-04-29T13:15:11 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@32eff876]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.project.BankAccountTest -->
     </test> <!-- ParameterizedTests -->
+    <test started-at="2025-04-30T16:00:54 CST" name="DataProviderTests" finished-at="2025-04-30T16:00:54 CST" duration-ms="13">
+      <class name="com.project.BankAccountTest">
+        <test-method is-config="true" signature="beforeSuiteSetup()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="beforeSuiteSetup" finished-at="2025-04-30T16:00:54 CST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuiteSetup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="testDepositWithDataProvider" data-provider="depositData" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[150.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithDataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="testDepositWithDataProvider" data-provider="depositData" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[500.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[500.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1000.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithDataProvider -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="setUp" finished-at="2025-04-30T16:00:54 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testDepositWithDataProvider(double,double,double)[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="testDepositWithDataProvider" data-provider="depositData" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositWithDataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.BankAccountTest@71809907]" started-at="2025-04-30T16:00:54 CST" name="tearDown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuiteTeardown()[pri:0, instance:com.project.BankAccountTest@4ac3c60d]" started-at="2025-04-30T16:00:54 CST" name="afterSuiteTeardown" finished-at="2025-04-30T16:00:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuiteTeardown -->
+      </class> <!-- com.project.BankAccountTest -->
+    </test> <!-- DataProviderTests -->
   </suite> <!-- BankAccountTestSuite -->
 </testng-results>
