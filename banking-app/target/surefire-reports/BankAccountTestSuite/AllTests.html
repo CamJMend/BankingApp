@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AllTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 30 16:00:54 CST 2025</td>
+<td>Started on:</td><td>Wed Apr 30 20:29:27 CST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (115 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (92 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>negative-tests </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,76 +76,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.project.BankAccountTest.testNegativeWithdrawal()'><b>testNegativeWithdrawal</b><br>Test class: com.project.BankAccountTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Withdrawal must be positive
-	at com.project.BankAccount.withdraw(BankAccount.java:16)
-	at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1026871825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1026871825'><pre>java.lang.IllegalArgumentException: Withdrawal must be positive
-	at com.project.BankAccount.withdraw(BankAccount.java:16)
-	at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:61)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.loginUserTest()'><b>loginUserTest</b><br>Test class: com.project.BankAccountTest</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.testDepositWithDataProvider()'><b>testDepositWithDataProvider</b><br>Test class: com.project.BankAccountTest<br>Parameters: 500.0, 500.0, 1000.0</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.testDepositWithDataProvider()'><b>testDepositWithDataProvider</b><br>Test class: com.project.BankAccountTest<br>Parameters: 0.0, 100.0, 100.0</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.transferFundsTest()'><b>transferFundsTest</b><br>Test class: com.project.BankAccountTest</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
 <td title='com.project.BankAccountTest.testNegativeDeposit()'><b>testNegativeDeposit</b><br>Test class: com.project.BankAccountTest</td>
 <td><div><pre>java.lang.IllegalArgumentException: Deposit must be positive
 	at com.project.BankAccount.deposit(BankAccount.java:11)
 	at com.project.BankAccountTest.testNegativeDeposit(BankAccountTest.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1766145591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1766145591'><pre>java.lang.IllegalArgumentException: Deposit must be positive
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2110756088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2110756088'><pre>java.lang.IllegalArgumentException: Deposit must be positive
 	at com.project.BankAccount.deposit(BankAccount.java:11)
 	at com.project.BankAccountTest.testNegativeDeposit(BankAccountTest.java:56)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -180,42 +117,55 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
+<td>com.project.BankAccountTest@29626d54</td></tr>
 <tr>
-<td title='com.project.BankAccountTest.openAppTest()'><b>openAppTest</b><br>Test class: com.project.BankAccountTest</td>
-<td></td>
+<td title='com.project.BankAccountTest.testNegativeWithdrawal()'><b>testNegativeWithdrawal</b><br>Test class: com.project.BankAccountTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Withdrawal must be positive
+	at com.project.BankAccount.withdraw(BankAccount.java:16)
+	at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace164974746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace164974746'><pre>java.lang.IllegalArgumentException: Withdrawal must be positive
+	at com.project.BankAccount.withdraw(BankAccount.java:16)
+	at com.project.BankAccountTest.testNegativeWithdrawal(BankAccountTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
 <td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
+<td>com.project.BankAccountTest@29626d54</td></tr>
 <tr>
 <td title='com.project.BankAccountTest.testOverdraft()'><b>testOverdraft</b><br>Test class: com.project.BankAccountTest</td>
 <td></td>
 <td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.testParameterizedDeposit()'><b>testParameterizedDeposit</b><br>Test class: com.project.BankAccountTest<br>Parameters: 1000.0, 500.0</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.testDeposit()'><b>testDeposit</b><br>Test class: com.project.BankAccountTest</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.testDepositWithDataProvider()'><b>testDepositWithDataProvider</b><br>Test class: com.project.BankAccountTest<br>Parameters: 100.0, 50.0, 150.0</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.testWithdraw()'><b>testWithdraw</b><br>Test class: com.project.BankAccountTest</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
-<tr>
-<td title='com.project.BankAccountTest.loginTest()'><b>loginTest</b><br>Test class: com.project.BankAccountTest</td>
-<td></td>
-<td>0</td>
-<td>com.project.BankAccountTest@4ac3c60d</td></tr>
+<td>com.project.BankAccountTest@29626d54</td></tr>
 </table><p>
 </body>
 </html>

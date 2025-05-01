@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1.315" tests="24" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1.681" tests="18" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="MX"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/cam/Desktop/BankingApp/banking-app/target/surefire/surefirebooter-20250430160053377_3.jar /Users/cam/Desktop/BankingApp/banking-app/target/surefire 2025-04-30T16-00-53_246-jvmRun1 surefire-20250430160053377_1tmp surefire_0-20250430160053377_2tmp"/>
+    <property name="sun.java.command" value="/Users/cam/Desktop/BankingApp/banking-app/target/surefire/surefirebooter-20250430202926165_3.jar /Users/cam/Desktop/BankingApp/banking-app/target/surefire 2025-04-30T20-29-25_933-jvmRun1 surefire-20250430202926165_1tmp surefire_0-20250430202926165_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/cam/Desktop/BankingApp/banking-app/target/test-classes:/Users/cam/Desktop/BankingApp/banking-app/target/classes:/Users/cam/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/cam/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/cam/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/cam/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/cam/Desktop/BankingApp/banking-app/target/surefire/surefirebooter-20250430160053377_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/cam/Desktop/BankingApp/banking-app/target/surefire/surefirebooter-20250430202926165_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -48,6 +48,7 @@
     <property name="java.version" value="23.0.2"/>
     <property name="user.dir" value="/Users/cam/Desktop/BankingApp/banking-app"/>
     <property name="os.arch" value="x86_64"/>
+    <property name="groups" value="negative-tests"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/cam/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -59,55 +60,30 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="loginTest" classname="com.project.BankAccountTest" time="0.002">
-    <system-out><![CDATA[Initializing test suite resources
-Preparing to run tests in BankAccountTest class
-Setting up a fresh account before each test method
-Logging in
+  <testcase name="testNegativeDeposit" classname="com.project.BankAccountTest" time="0.002">
+    <system-out><![CDATA[Setting up a fresh account before each test method
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="loginTest" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-Logging in
-]]></system-out>
-  </testcase>
-  <testcase name="openAppTest" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-Opening banking app...
-]]></system-out>
-  </testcase>
-  <testcase name="testDepositWithDataProvider[100.0, 50.0, 150.0](1)" classname="com.project.BankAccountTest" time="0.001">
+  <testcase name="testNegativeDeposit" classname="com.project.BankAccountTest" time="0.0">
     <system-out><![CDATA[Cleaning up after test method
 Setting up a fresh account before each test method
 ]]></system-out>
   </testcase>
-  <testcase name="testDepositWithDataProvider[100.0, 50.0, 150.0](1)" classname="com.project.BankAccountTest" time="0.0">
+  <testcase name="testNegativeDeposit" classname="com.project.BankAccountTest" time="0.0">
     <system-out><![CDATA[Cleaning up after test method
 Setting up a fresh account before each test method
 ]]></system-out>
   </testcase>
-  <testcase name="testDepositWithDataProvider[500.0, 500.0, 1000.0](2)" classname="com.project.BankAccountTest" time="0.0">
+  <testcase name="testNegativeDeposit" classname="com.project.BankAccountTest" time="0.002">
     <system-out><![CDATA[Cleaning up after test method
 Setting up a fresh account before each test method
 ]]></system-out>
   </testcase>
-  <testcase name="testDepositWithDataProvider[500.0, 500.0, 1000.0](2)" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="testDepositWithDataProvider[0.0, 100.0, 100.0](3)" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="testDepositWithDataProvider[0.0, 100.0, 100.0](3)" classname="com.project.BankAccountTest" time="0.0">
+  <testcase name="testNegativeDeposit" classname="com.project.BankAccountTest" time="0.003">
     <system-out><![CDATA[Cleaning up after test method
 Setting up a fresh account before each test method
 ]]></system-out>
@@ -117,7 +93,7 @@ Setting up a fresh account before each test method
 Setting up a fresh account before each test method
 ]]></system-out>
   </testcase>
-  <testcase name="testNegativeDeposit" classname="com.project.BankAccountTest" time="0.009">
+  <testcase name="testNegativeWithdrawal" classname="com.project.BankAccountTest" time="0.002">
     <system-out><![CDATA[Cleaning up after test method
 Setting up a fresh account before each test method
 ]]></system-out>
@@ -128,6 +104,41 @@ Setting up a fresh account before each test method
 ]]></system-out>
   </testcase>
   <testcase name="testNegativeWithdrawal" classname="com.project.BankAccountTest" time="0.0">
+    <system-out><![CDATA[Cleaning up after test method
+Setting up a fresh account before each test method
+]]></system-out>
+  </testcase>
+  <testcase name="testNegativeWithdrawal" classname="com.project.BankAccountTest" time="0.004">
+    <system-out><![CDATA[Cleaning up after test method
+Setting up a fresh account before each test method
+]]></system-out>
+  </testcase>
+  <testcase name="testNegativeWithdrawal" classname="com.project.BankAccountTest" time="0.001">
+    <system-out><![CDATA[Cleaning up after test method
+Setting up a fresh account before each test method
+]]></system-out>
+  </testcase>
+  <testcase name="testNegativeWithdrawal" classname="com.project.BankAccountTest" time="0.0">
+    <system-out><![CDATA[Cleaning up after test method
+Setting up a fresh account before each test method
+]]></system-out>
+  </testcase>
+  <testcase name="testOverdraft" classname="com.project.BankAccountTest" time="0.003">
+    <system-out><![CDATA[Cleaning up after test method
+Setting up a fresh account before each test method
+]]></system-out>
+  </testcase>
+  <testcase name="testOverdraft" classname="com.project.BankAccountTest" time="0.0">
+    <system-out><![CDATA[Cleaning up after test method
+Setting up a fresh account before each test method
+]]></system-out>
+  </testcase>
+  <testcase name="testOverdraft" classname="com.project.BankAccountTest" time="0.0">
+    <system-out><![CDATA[Cleaning up after test method
+Setting up a fresh account before each test method
+]]></system-out>
+  </testcase>
+  <testcase name="testOverdraft" classname="com.project.BankAccountTest" time="0.0">
     <system-out><![CDATA[Cleaning up after test method
 Setting up a fresh account before each test method
 ]]></system-out>
@@ -138,55 +149,6 @@ Setting up a fresh account before each test method
 ]]></system-out>
   </testcase>
   <testcase name="testOverdraft" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="testParameterizedDeposit[1000.0, 500.0](1)" classname="com.project.BankAccountTest" time="0.004">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="testParameterizedDeposit[1000.0, 500.0](1)" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="transferFundsTest" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-Transferring funds after login
-]]></system-out>
-  </testcase>
-  <testcase name="transferFundsTest" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-Transferring funds after login
-]]></system-out>
-  </testcase>
-  <testcase name="loginUserTest" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-Logging in as user...
-]]></system-out>
-  </testcase>
-  <testcase name="testDeposit" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="testDeposit" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Completed all tests in BankAccountTest class
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="testWithdraw" classname="com.project.BankAccountTest" time="0.0">
-    <system-out><![CDATA[Cleaning up after test method
-Setting up a fresh account before each test method
-]]></system-out>
-  </testcase>
-  <testcase name="testWithdraw" classname="com.project.BankAccountTest" time="0.0">
     <system-out><![CDATA[Cleaning up after test method
 Setting up a fresh account before each test method
 ]]></system-out>
